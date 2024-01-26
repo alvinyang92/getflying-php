@@ -62,6 +62,6 @@ include './inc/nav.php';
     </div>
   </div>
 </div>
-<?php include './inc/BlogRelated.php'; ?>
+<div class="mx-auto max-w-7xl px-6 lg:px-8"><?php include './inc/BlogRelated.php'; ?></div>
 
 <?php include './inc/footer.php'; ?>

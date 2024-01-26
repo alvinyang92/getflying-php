@@ -83,9 +83,9 @@ include './inc/meta.php';
 
                     <!-- username -->
                     <div class="flex flex-col col-span-2">
-                        <div class="flex items-center gap-2">
+                        <div class="flex flex-col sm:flex-rowitems-center gap-2">
                             <label for="user_username" class="text-black font-medium">Username</label>
-                            <span class="text-gray-600 text-base">(only letters, numbers, and underscores)</span>
+                            <div class="text-gray-600 text-sm sm:text-base">(only letters, numbers, and underscores)</div>
                         </div>
                         <input type="text" pattern="[a-zA-Z0-9_]*[a-zA-Z][a-zA-Z0-9_]*" name="user[username]" id="user[username]" class="mt-2 p-2 h-10 border border-black focus:outline-none focus:ring-0 focus:border-black rounded text-gray-900">
                     </div>
