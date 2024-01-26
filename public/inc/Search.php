@@ -1,4 +1,4 @@
-<div x-data="searchData()" class="w-[307px]">
+<div x-data="searchData()" class="">
     <!-- input -->
     <div class="">
         <form class="relative" style="margin-block-end: 0px;">
@@ -7,7 +7,7 @@
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                 </svg>
             </div>
-            <input x-on:click="open = !open" type="search" x-model="search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg rounded-r-none bg-gray-50 focus:gray-300 focus:ring-0" placeholder="Search your desination" required>
+            <input x-on:click="open = !open" type="search" x-model="search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 border-r border-b-0 sm:border-b sm:border-r-0  bg-gray-50 focus:gray-300 focus:ring-0" placeholder="Search your desination" required>
         </form>
     </div>
     <!-- dropdown -->

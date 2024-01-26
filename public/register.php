@@ -70,6 +70,17 @@ include './inc/meta.php';
                         <input type="email" name="email" id="email" class="mt-2 p-2 h-10 border border-black focus:outline-none focus:ring-0 focus:border-black rounded text-gray-900">
                     </div>
 
+                    <!-- phone -->
+                    <div class="flex flex-col col-span-2">
+                        <label for="phone" class="text-black font-medium">Phone Number</label>
+                        <input type="tel name="phone" id="phone" class="mt-2 p-2 h-10 border border-black focus:outline-none focus:ring-0 focus:border-black rounded text-gray-900">
+                    </div>
+                    <!-- email -->
+                    <div class="flex flex-col col-span-2">
+                        <label for="email" class="text-black font-medium">Email Address</label>
+                        <input type="email" name="email" id="email" class="mt-2 p-2 h-10 border border-black focus:outline-none focus:ring-0 focus:border-black rounded text-gray-900">
+                    </div>
+
                     <!-- username -->
                     <div class="flex flex-col col-span-2">
                         <div class="flex items-center gap-2">

@@ -9,46 +9,53 @@
         <div id="detail">
             <?php include './inc/TourDiscountCode.php'; ?>
             <!-- tour feature -->
-            <div class="grid grid-cols-3 gap-4 mt-10">
-                <!-- region -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10">
+                <!-- location -->
                 <div class="flex items-center gap-4">
                     <img class="w-[48px]" src="./assets/images/tour-gallery/location-icon.svg">
                     <div class="">
-                        <p class="font-semibold text-black">Region</p>
-                        <p class="text-gray-500">South Africa</p>
+                        <p class="font-semibold text-black">Location</p>
+                        <!-- **anchor link to map section** -->
+                        <a href="#map">
+                            <p class="text-gray-500 underline">Pulau Cenang</p>
+                        </a>
                     </div>
                 </div>
-                <!-- duration -->
+                <!-- level -->
+                <div class="flex items-center gap-4">
+                    <img class="w-[48px]" src="./assets/images/tour-gallery/level-icon.svg">
+                    <div class="">
+                        <p class="font-semibold text-black">Level</p>
+                        <p class="text-gray-500">Extreme</p>
+                    </div>
+                </div>
+                <!-- language -->
+                <div class="flex items-center gap-4">
+                    <img class="w-[48px]" src="./assets/images/tour-gallery/language-icon.svg">
+                    <div class="">
+                        <p class="font-semibold text-black">Language</p>
+                        <p class="text-gray-500">English</p>
+                    </div>
+                </div>
+                <!-- age -->
+                <div class="flex items-center gap-4">
+                    <img class="w-[48px]" src="./assets/images/tour-gallery/age-icon.svg">
+                    <div class="">
+                        <p class="font-semibold text-black">Age</p>
+                        <p class="text-gray-500">10+</p>
+                    </div>
+                </div>
+                <!-- Duration -->
                 <div class="flex items-center gap-4">
                     <img class="w-[48px]" src="./assets/images/tour-gallery/duration-icon.svg">
                     <div class="">
                         <p class="font-semibold text-black">Duration</p>
-                        <!-- <p class="text-gray-500">6 Days 5 Nights</p> -->
-                        <span>6</span>
+                        <span>1</span>
                         <!-- static -->
-                        <span>Days</span>
-                        <span>5</span>
+                        <span>hour</span>
+                        <span>30</span>
                         <!-- static -->
-                        <span>Nights</span>
-                    </div>
-                </div>
-                <!-- Group Size -->
-                <div class="flex items-center gap-4">
-                    <img class="w-[48px]" src="./assets/images/tour-gallery/group-icon.svg">
-                    <div class="">
-                        <p class="font-semibold text-black">Group Size</p>
-                        <!-- <p class="text-gray-500">40 People</p> -->
-                        <span>40</span>
-                        <!-- static -->
-                        <span>People</span>
-                    </div>
-                </div>
-                <!-- Age -->
-                <div class="flex items-center gap-4">
-                    <img class="w-[48px]" src="./assets/images/tour-gallery/age-icon.svg">
-                    <div>
-                        <p class="font-semibold text-black">Age</p>
-                        <p class="text-gray-500">10+</p>
+                        <span>Min</span>
                     </div>
                 </div>
                 <!-- Cancellation  -->
@@ -56,9 +63,9 @@
                     <img class="w-[48px]" src="./assets/images/tour-gallery/cancellation-icon.svg">
                     <div class="">
                         <p class="font-semibold text-black">Cancellation</p>
-                        <!-- **open new tab to policy page** -->
-                        <a href="">
-                            <p class="text-gray-500 underline">Moderate</p>
+                         <!-- **open new tab to policy page** -->
+                         <a href="">
+                            <p class="text-gray-500 underline">Flexible</p>
                         </a>
                     </div>
                 </div>
@@ -77,3 +84,5 @@
 
     </div>
 </div>
+
+

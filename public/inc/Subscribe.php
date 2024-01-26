@@ -1,4 +1,4 @@
-<div class="py-16 pb-16 isolate relative storyblok__outline">
+<div class="py-8 isolate relative storyblok__outline">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="bg-gradient-to-br from-[#193C94] to-[#3DB9FF] py-16 sm:py-16 rounded-2xl">
             <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-16">

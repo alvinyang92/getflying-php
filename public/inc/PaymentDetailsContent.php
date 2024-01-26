@@ -34,26 +34,6 @@ $titleContent = '[
          "content": "Malaysia"
      },
      {
-         "title": "Address",
-         "content": "123 Jalan Raya"
-     },
-     {
-         "title": "City",
-         "content": "Kuala Lumpur"
-     },
-     {
-         "title": "Postcode",
-         "content": "50200"
-     },
-     {
-         "title": "State",
-         "content": "Wilayah Persekutuan Kuala Lumpur"
-     },
-     {
-         "title": "Country",
-         "content": "Malaysia"
-     },
-     {
          "title": "Phone Number",
          "content": "(+60) 16 497 4366"
      },
@@ -131,13 +111,13 @@ $contacts = json_decode($contact);
           <dl class="flex flex-wrap">
             <div class="flex-auto pl-6 pt-6">
               <dt class="font-semibold leading-6 text-gray-900">13 days 10 nights discovery of South Africa</dt>
-              <dd class="mt-1 font-medium leading-6 text-gray-400">13 days - 20 June - 02 July 2023</dd>
+              <dd class="mt-1 font-medium leading-6 text-gray-400">(20 June - 02 July 2023)</dd>
             </div>
             <!-- quantity guest -->
             <div class="mt-6 flex w-full justify-between gap-x-4 border-t border-gray-900/5 px-6 pt-6">
               <!-- title -->
               <dt class="flex-none">
-                <span class="font-bold leading-6 text-gray-900">Quantity</span>
+                <span class="font-bold leading-6 text-gray-900">Room Details</span>
               </dt>
               <!-- content -->
               <dd class="text-end  font-medium leading-6 text-gray-900">
@@ -275,7 +255,7 @@ $contacts = json_decode($contact);
             <div class="flex w-full justify-between">
               <!-- title -->
               <dt class="">
-                <span class="  font-medium leading-6 text-gray-500">Subtotal</span>
+                <span class="  font-medium leading-6 text-gray-500">Total Cost</span>
               </dt>
               <!-- price -->
               <dd class=" text-end font-semibold leading-6 text-gray-900">RM10,876.90</dd>

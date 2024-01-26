@@ -1,4 +1,4 @@
-<div class="w-[300px]">
+<div class="">
     <form class="relative" style="margin-block-end: 0px;">
         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-500">
@@ -6,7 +6,7 @@
             </svg>
         </div>
 
-        <input type="text" class="datepicker block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg rounded-l-none rounded-r-none border-l-0 border-r-0 bg-gray-50  focus:ring-0" placeholder="Select your date">
+        <input type="text" class="datepicker block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300   bg-gray-50 focus:ring-0" placeholder="Select your date">
     </form>
 </div>
 

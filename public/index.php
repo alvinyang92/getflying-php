@@ -3,17 +3,13 @@ $title = "Home - Getflying ";
 $conical_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 include './inc/nav.php';
 ?>
-<!-- alert bar -->
-<?php include './inc/alert.php'; ?>
-<!-- home banner -->
 
+<!-- alert -->
+<?php include './inc/alert.php'; ?>
+<!-- Banner -->
 <?php include './inc/FeatureBanner.php'; ?>
 
 
-
-
-
-<!-- USP -->
 <?php
 $displayGridUsp = true;
 // $gridColumns = "lg:grid-cols-3";
@@ -32,7 +28,7 @@ echo str_replace(
 
 
 
-<!-- Explore tour destinations - Card full -->
+
 <?php
 $displayGridCardFull = true;
 ob_start();
@@ -124,8 +120,8 @@ $gridblog1 = ob_get_clean();
 echo str_replace(
     array('{{title}}', '{{subtitle}}'),
     array(
-        // 'Hottest Activities in the Month',
-        // 'Discover exciting activities that will make your month unforgettable'
+         'Latest Blog',
+        //  'Discover exciting activities that will make your month unforgettable'
     ),
     $gridblog1
 );

@@ -338,10 +338,27 @@ $(document).ready(function () {
 });
 
  
+//popup
+function myFunctionMobile() {
+  console.log("clickblack1")
+  var xy = document.getElementById("black-overlay-1");
+  if (xy.style.display === "block") {
+    xy.style.display = "none";
+  } else {
+    xy.style.display = "block";
+  }
+}
 
+function toggleMobileMenu() {
+  var body = document.body;
+  var mobileMenu = document.getElementById('mobileMenu');
 
+  // Toggle the 'no-scroll' class directly on the body
+  body.classList.toggle('no-scroll');
 
-
+  // Toggle the visibility of the mobile menu
+  mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
+}
 
 
 const openButton = document.getElementById('openOverlay');

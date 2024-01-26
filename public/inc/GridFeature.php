@@ -20,16 +20,16 @@ if ($lgGridCols2) {
 ?>
 
 
-<div class="bg-white pb-16 py-16">
+<div class="bg-white sm:pb-16 py-8">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <!-- title -->
         <div class="max-w-2xl mx-auto lg:max-w-none">
             <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"><?php echo $item->title; ?></p>
-            <p class="mt-4 text-lg leading-8 text-gray-600"><?php echo $item->subtitle; ?></p>
+            <p class="mt-2 text-lg leading-8 text-gray-600"><?php echo $item->subtitle; ?></p>
         </div>
         <!-- grid -->
         <div class="mx-auto mt-10 max-w-2xl lg:max-w-none">
-            <dl class="<?php echo $gridColumns; ?>  gap-y-16 grid grid-cols-1 gap-4">
+            <dl class="<?php echo $gridColumns; ?> gap-y-8 grid grid-cols-1 gap-4">
                 <?php
                 if ($displayGridActivites) {
                     include './inc/GridCardActivities.php';

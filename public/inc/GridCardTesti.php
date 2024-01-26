@@ -27,7 +27,7 @@ $items = json_decode($gridCardReview);
 <?php foreach ($items as $item) { ?>
     <div class="bg-gray-100/60 p-8 rounded-xl">
         <div class="flex items-center space-x-4">
-            <div class="space-y-1 font-medium dark:text-white">
+            <div class="space-y-1 font-medium ">
                 <p class="text-xl"><?php echo $item->name; ?></p>
             </div>
         </div>

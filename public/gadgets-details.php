@@ -1,5 +1,5 @@
 <?php
-$title = "Tour - Getflying ";
+$title = "Gadgets Details - Getflying ";
 $conical_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 include './inc/nav.php';
 ?>

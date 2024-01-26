@@ -1,5 +1,5 @@
 <?php
-$title = "Register - Getflying ";
+$title = "Login - Getflying ";
 $conical_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 include './inc/meta.php';
 ?>

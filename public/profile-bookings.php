@@ -1,11 +1,11 @@
 <?php
-$title = "Cart - Getflying ";
+$title = "Profile Bookings - Getflying ";
 $conical_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 include './inc/nav.php';
 ?>
 
 
-<div class="mx-auto max-w-7xl pt-5 lg:flex lg:gap-x-16 lg:px-8">
+<div class="mx-auto max-w-7xl pt-5 lg:flex lg:gap-x-16 lg:px-8 ">
     <!-- side bar -->
     <aside class="flex overflow-x-auto border-b border-gray-900/5 py-4 lg:block lg:w-64 lg:flex-none lg:border-0 lg:py-20">
         <nav class="flex-none px-4 sm:px-6 lg:px-0">

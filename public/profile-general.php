@@ -1,5 +1,5 @@
 <?php
-$title = "Cart - Getflying ";
+$title = "Profile General - Getflying ";
 $conical_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 include './inc/nav.php';
 ?>

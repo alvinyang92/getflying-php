@@ -1,5 +1,5 @@
 <?php
-$title = "Cart - Getflying ";
+$title = "Gadgets Payment Details - Getflying ";
 $conical_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 include './inc/nav.php';
 ?>
@@ -46,7 +46,7 @@ include './inc/nav.php';
 
         <dl class="hidden space-y-6 border-t border-gray-200 pt-6 text-sm font-medium text-gray-900 lg:block">
           <div class="flex items-center justify-between">
-            <dt class="text-gray-600">Subtotal</dt>
+            <dt class="text-gray-600">Total Cost</dt>
             <dd>RM32.00</dd>
           </div>
 
@@ -105,7 +105,7 @@ include './inc/nav.php';
             <div class="relative bg-white px-4 py-6 sm:px-6">
               <dl class="mx-auto max-w-lg space-y-6">
                 <div class="flex items-center justify-between">
-                  <dt class="text-gray-600">Subtotal</dt>
+                  <dt class="text-gray-600">Total Cost</dt>
                   <dd>$320.00</dd>
                 </div>
 

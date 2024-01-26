@@ -3,7 +3,7 @@
         <!-- title -->
       <div class="mx-auto max-w-2xl lg:max-w-none">
         <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Unforgettable activities</p>
-        <p class="mt-4 text-lg leading-8 text-gray-600">Activities that linger forever in your memory are unforgettable</p>
+        <p class="mt-2 text-lg leading-8 text-gray-600">Activities that linger forever in your memory are unforgettable</p>
       </div>
       <!-- grid -->
       <div class="mx-auto mt-10 max-w-2xl lg:max-w-none">

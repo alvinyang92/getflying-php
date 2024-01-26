@@ -9,9 +9,9 @@ include './inc/nav.php';
 
         <!-- grid -->
         <div class="mx-auto mt-10 max-w-2xl lg:max-w-none">
-            <h2 class="text-2xl font-bold tracking-tight text-gray-900">Gadgets</h2>
+            <h2 class="text-2xl font-bold tracking-tight text-gray-900">Blog</h2>
             <dl class="mt-10 lg:grid-cols-4 gap-y-16 grid grid-cols-1 gap-4">
-                <?php include './inc/GridCardGadgets.php'; ?>
+                <?php include './inc/GridCardBlogFull.php'; ?>
 
             </dl>
         </div>
@@ -19,5 +19,7 @@ include './inc/nav.php';
     </div>
 
 </div>
+
+
 
 <?php include './inc/footer.php'; ?>

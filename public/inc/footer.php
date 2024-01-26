@@ -62,7 +62,7 @@
                         <h3 class="text-sm font-semibold leading-6 text-white">Contact</h3>
                         <div class="mt-6 space-y-4">
                             <div class="text-sm leading-6 text-gray-300 hover:text-godoc-green"><a href="mailto:info@getflying.com.my" rel="noopener noreferrer" class="text-gf-light-blue">info@getflying.com.my</a></div>
-                            <div class="text-sm leading-6 text-gray-300 hover:text-godoc-green"><a href="tel:+6012240910" rel="noopener noreferrer" class="text-gf-light-blue">+60 12-240 910</a></div>
+                            <!-- <div class="text-sm leading-6 text-gray-300 hover:text-godoc-green"><a href="tel:+6012240910" rel="noopener noreferrer" class="text-gf-light-blue">+60 12-240 910</a></div> -->
                         </div>
                     </div>
                 </div>

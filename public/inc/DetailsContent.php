@@ -28,39 +28,9 @@ $titleContent = '[
      {
          "title": "Date of Birth",
          "content": "09 June 1998"
-     },
-     {
-         "title": "Nationality",
-         "content": "Malaysia"
-     },
-     {
-         "title": "Address",
-         "content": "123 Jalan Raya"
-     },
-     {
-         "title": "City",
-         "content": "Kuala Lumpur"
-     },
-     {
-         "title": "Postcode",
-         "content": "50200"
-     },
-     {
-         "title": "State",
-         "content": "Wilayah Persekutuan Kuala Lumpur"
-     },
-     {
-         "title": "Country",
-         "content": "Malaysia"
-     },
-     {
-         "title": "Phone Number",
-         "content": "(+60) 16 497 4366"
-     },
-     {
-         "title": "Email Address",
-         "content": "alvinngtzeyang@gmail.com"
      }
+   
+
 
  ]';
 
@@ -175,7 +145,7 @@ $contacts = json_decode($contact);
               <div class="flex w-full justify-between">
                 <!-- title -->
                 <dt class="">
-                  <span class="  font-medium leading-6 text-gray-500">Visa</span>
+                  <span class=" font-medium leading-6 text-gray-500">Visa</span>
                 </dt>
                 <!-- price -->
                 <dd class=" text-end font-semibold leading-6 text-gray-900">RM99 x 6</dd>
@@ -268,7 +238,7 @@ $contacts = json_decode($contact);
             <div class="flex w-full justify-between">
               <!-- title -->
               <dt class="">
-                <span class="  font-medium leading-6 text-gray-500">Subtotal</span>
+                <span class="  font-medium leading-6 text-gray-500">Total Cost</span>
               </dt>
               <!-- price -->
               <dd class=" text-end font-semibold leading-6 text-gray-900">RM10,876.90</dd>
@@ -337,11 +307,31 @@ $contacts = json_decode($contact);
                   <div class="relative flex items-start">
                     <!-- checkbox -->
                     <div class="flex h-6 items-center">
-                      <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-800 focus:ring-blue-800">
+                      <input id="comments" aria-describedby="comments-description" checked="true" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-800 focus:ring-blue-800">
                     </div>
                     <!-- text -->
                     <div class="ml-3 leading-6">
                       <label for="comments" class="font-medium text-gray-900">Travel Visa</label>
+                    </div>
+                  </div>
+                  <!-- price -->
+                  <div class="flex gap-2 items-center justify-center">
+                    <span class="inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Compulsory</span>
+                    <span class="font-bold text-gray-900">RM 99.90/person</span>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div class="flex justify-between w-full border-t border-gray-900/5 py-6">
+                  <!-- checkbox -->
+                  <div class="relative flex items-start">
+                    <!-- checkbox -->
+                    <div class="flex h-6 items-center">
+                      <input id="comments" aria-describedby="comments-description"  checked="true" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-800 focus:ring-blue-800">
+                    </div>
+                    <!-- text -->
+                    <div class="ml-3 leading-6">
+                      <label for="comments" class="font-medium text-gray-900">Travel Insurance</label>
                     </div>
                   </div>
                   <!-- price -->
@@ -362,26 +352,6 @@ $contacts = json_decode($contact);
                     <!-- text -->
                     <div class="ml-3 leading-6">
                       <label for="comments" class="font-medium text-gray-900">Tipping / Guide</label>
-                    </div>
-                  </div>
-                  <!-- price -->
-                  <div class="flex gap-2 items-center justify-center">
-                    <span class="inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Compulsory</span>
-                    <span class="font-bold text-gray-900">RM 99.90/person</span>
-                  </div>
-                </div>
-
-                <!-- item -->
-                <div class="flex justify-between w-full border-t border-gray-900/5 py-6">
-                  <!-- checkbox -->
-                  <div class="relative flex items-start">
-                    <!-- checkbox -->
-                    <div class="flex h-6 items-center">
-                      <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-800 focus:ring-blue-800">
-                    </div>
-                    <!-- text -->
-                    <div class="ml-3 leading-6">
-                      <label for="comments" class="font-medium text-gray-900">Travel Insurance</label>
                     </div>
                   </div>
                   <!-- price -->
@@ -481,24 +451,137 @@ $contacts = json_decode($contact);
                   <a href="#" class="bg-gray-100 text-black rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Alex Wong</a>
                 </div>
               </div>
-
-
-
-
             </div>
 
             <div class="px-6 py-7 w-full">
               <div class="space-y-3">
 
-                <?php foreach ($items as $item) { ?>
-                  <!-- item -->
-                  <div class="flex justify-between w-full">
-                    <span class="text-left "><?php echo $item->title; ?></span>
-                    <div class="text-left w-[70%]">
-                      <span class="font-semibold"><?php echo $item->content; ?></span>
+                <!-- Title -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Title</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <option>Mr</option>
+                        <!-- <option>Mr</option>
+                        <option>Mrs</option> -->
+                      </select>
                     </div>
                   </div>
-                <?php } ?>
+                </div>
+
+                <!-- first name -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">First Name</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- last Name -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Last Name</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- NRIC -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">NRIC Number</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Passport Number -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Passport Number</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Passport Expiry Date-->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Passport Expiry Date
+                  </span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Date of Birtth -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Date of Birtth </span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <option>6 July 1999</option>
+                        <!-- <option>6/7/1999</option> -->
+       
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- nationality -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Nationality</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <option>Malaysia</option>
+                        <option>Canada</option>
+                        <option>Mexico</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Phone number -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Phone number</span>
+                  <div class="text-left w-[70%] flex gap-2">
+
+                    <!-- country code -->
+                    <div class="mt-2 text-left w-[60%]">
+                      <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <option>Malaysia (+60)</option>
+                        <option>Canada</option>
+                        <option>Mexico</option>
+                      </select>
+                    </div>
+
+                    <!-- number -->
+                    <div class="text-left w-full">
+                      <div class="mt-2 ">
+                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <!-- <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Email</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+                </div> -->
 
 
 
@@ -510,6 +593,7 @@ $contacts = json_decode($contact);
 
         <!-- Traveler Info -->
         <div class="rounded-lg bg-gray-50 shadow-sm ring-1 ring-gray-900/5 mb-5">
+
           <!-- title + content -->
           <dl class="flex flex-wrap">
             <div class="flex-auto pl-6 pt-6">
@@ -520,17 +604,130 @@ $contacts = json_decode($contact);
             <div class="px-6 py-7 w-full mt-6 border-t border-gray-900/5 ">
               <div class="space-y-3">
 
-                <?php foreach ($contacts as $contact) { ?>
-                  <!-- item -->
-                  <div class="flex justify-between w-full">
-                    <span class="text-left "><?php echo $contact->title; ?></span>
-                    <div class="text-left w-[70%]">
-                      <span class="font-semibold"><?php echo $contact->content; ?></span>
+                <!-- First Name -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">First Name</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
                   </div>
-                <?php } ?>
+                </div>
 
 
+                <!-- last Name -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Last Name</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- nationality -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Nationality</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <option>Malaysia</option>
+                        <option>Canada</option>
+                        <option>Mexico</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Address -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Address</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- City -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">City</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Postcode -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Postcode</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- State -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">State</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <option>Penang</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Country -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Country</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <option>Malaysia</option>
+                        <option>Canada</option>
+                        <option>Mexico</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Phone number -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Phone number</span>
+                  <div class="text-left w-[70%] flex gap-2">
+
+                    <!-- country code -->
+                    <div class="mt-2 text-left w-[60%]">
+                      <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <option>Malaysia (+60)</option>
+                        <option>Canada</option>
+                        <option>Mexico</option>
+                      </select>
+                    </div>
+
+                    <!-- number -->
+                    <div class="text-left w-full">
+                      <div class="mt-2 ">
+                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex justify-between w-full">
+                  <span class="text-left py-2">Email</span>
+                  <div class="text-left w-[70%]">
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+                </div>
 
               </div>
             </div>
@@ -541,11 +738,11 @@ $contacts = json_decode($contact);
         <!-- tnc-->
         <div class="rounded-lg bg-gray-50 shadow-sm ring-1 ring-gray-900/5 mb-5 p-5">
           <div class="flex justify-between items-center">
-            <span class="w-[600px] text-sm">By continuing, you acknowledge and agree to Getflying’s General Terms of Use and Privacy Policy Use</span>
+            <span class="w-[600px] text-sm">By continuing, you acknowledge and agree to Getflying’s <span class="text-gf-light-blue underline">General Terms of Use</span> and <span class="text-gf-light-blue underline">Privacy Policy Use</span></span>
             <a href="payment.php">
               <button type="button" class="rounded-md bg-gf-light-blue px-6 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gf-light-blue ">Make Payment</button>
 
-                </a>
+            </a>
 
           </div>
 
